@@ -4,39 +4,205 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<title>About | Joseph "JP"</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+	<title>About | "JP"</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+	<style>
+
+	/*body {
+		/*background-color: red; 
+		margin: 0 auto;
+		background: 
+			url(assets/images/DNA_BG.jpg); 
+		background-size: 110%;
+		background-repeat: no-repeat;
+		}
+		*/
+
+
+	
+
+		/* entire container, keeps perspective */
+.flip-container {
+	/*perspective: 250px;*/
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 250px;
+	height: 250px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+/*footer*/
+
+footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 4px solid #34495e;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center
+	margin 0 auto;
+}
+
+	</style>
+
+</head>	 
+  
+
+
 <body>
+ <header class="row">
 
-	<header id="masthead">
-		<div class="container">
-			<a href="index.html" id="logo">Joseph Pulaski</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+<nav class="col-sm-6" style="background-color: #ccffff;">    
+         <ul class="nav navbar-nav navbar-left">
+           <li>
+            <a class="soc-icon" href="http://www.github.com/GoodPBC">
+   	 	     <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: px;" src="assets/images/GitHubIcon32x32.png" class="social" alt="Github">
+		    </a>
+		   </li>
+           <li>
+            <a class="soc-icon" href="http://www.stackoverflow.com">
+		     <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: px;" src="assets/images/StackOverflowIcon32x32.png" class="social" alt="Stackoverflow">
+		    </a>
+           </li>
+           <li>
+            <a class="soc-icon" href="https://www.linkedin.com/in/goodinc">
+		     <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: px;" src="assets/images/LinkedInIconB_W.png" class="social" alt="LinkedIn">
+		    </a>
+           </li>
+         </ul>
+     </nav>	
 
-	<main class="container">
-		<section class="main-section">
-			<h1>About Me</h1>
 
-			<img class="main-image" src="https://raw.githubusercontent.com/GoodPBC/Week-1-HW-Portfolio/master/assets/images/Profilepic2.JPG">
 
-			 <p>As far as I know We have one life to live on this fine planet of ours. I have found that Consitently striving to be the best possible versions of myself at any given point in time, is where I find abundance. You should also know that "at any given point in time I always have my computer with me because im borderline obbsessed with all things tech. The possibilities are infinite in the time we are living. I enjoy thinking about, studying and creating new applications of  and with various technologies. There is so much to learn in such little time. Be sure to soak up as much as you can.
- 	   		 </p> 
- 	     	  <br>
- 	    	<p>In my previous life I traveled the United states helping small business owners in just about every major U.S. city, solve their customer acquisition challenges.  It was a great experience and the best education I could have asked for. My years of studying people, learning what they need and understanding their wants, has given me a strong sense of empathy to bring towards my development efforts. 
- 	    	  <br>
- 	  		<p>I love to help so please reach out to me and lets solve a problem together. Two heads are better than one, yours is better than mine, mines different than yours. Lets put them together and do something awesome!
- 	  		</p>
 
-		</section>
+ <!--   	<div id="social-icons" class="col-sm-6" style="background-color: #ccffff;">
+   	 	<a class="soc-icon" href="http://www.github.com/GoodPBC">
+   	 	  <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: 3px;" src="assets/images/GitHubIcon32x32.png" class="social" alt="Github">
+		</a>
+		<a class="soc-icon" href="http://www.stackoverflow.com">
+		  <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: 3px;" src="assets/images/StackOverflowIcon32x32.png" class="social" alt="Stackoverflow">
+		</a>
+		<a class="soc-icon" href="https://www.linkedin.com/in/goodinc">
+		  <img style="height: 32px; width: 32px; margin-right: 10px; margin-top: 3px;" src="assets/images/LinkedInIconB_W.png" class="social" alt="LinkedIn">
+		</a>	
+   	</div> -->
+    
+       <nav class="col-sm-6" style="background-color: #ccffff;">    
+         <ul class="nav navbar-nav navbar-right" style="padding-right: 50px; padding-top:12px;">
+           <li><a href="#" style="color: #34495e;">About</a></li>
+           <li><a href="#"  style="color: #34495e;">Portfolio</a></li>
+           <li><a href="#"  style="color: #34495e;">Contact</a></li>
+         </ul>
+     </nav>	
+     
+    </header>
+ </div><!-- /.container-fluid -->
+   
+	<section class="container-fluid row" id="main-content">
+	 <div class="col-md-4">
+	 	<h2>Yesterday</h2>
+	  <p style="text-align: justify; line-height: 1.9;">As far as I know We have one life to live on this fine planet of ours. I have found that consitently striving to be the best possible versions of myself at any given point in time, is where I find true happiness. You should also know that at any given point in time I always have my computer with me because im borderline obbsessed with all things tech. The possibilities are infinite in the time we are living. I enjoy thinking about, studying and creating new applications of and with various technologies. There is so much to learn in such little time. Be sure to soak up as much as you can.
+	  </p> 
+ 	 </div>
 
-		<section class="sidebar">
+	<!-- ##### middle colunm for the flip animation profile pic ##### -->
+	 <div class="pic-bg col-md-4" style="margin: auto;">
+	  <h1 style="text-align: center; font-size: 36px; color: #34495e;">Joseph Pulaski</h1>
+       <div class="flip-container" ontouchstart="this.classList.toggle('hover');" style="margin: auto;">
+	    <div class="flipper">
+		 <div class="front">
+		  <img class="main-image" src="https://raw.githubusercontent.com/GoodPBC/Week-1-HW-Portfolio/master/assets/images/Profilepic2.JPG" style="border-radius: 50%;">
+		 </div>
+		 <div class="back">
+		  <img class="main-image" src="https://raw.githubusercontent.com/GoodPBC/Week-1-HW-Portfolio/master/assets/images/Profilepic2.JPG" style="border-radius: 50%;">
+		 </div>
+	    </div>
+      </div>
+     </div>
+	 <div class="col-md-4">
+	  <h2 style= "color: #34495e;">Today</h2>
+	  <p style="text-align: justify; line-height: 1.9; margin-right: 50px;">As far as I know We have one life to live on this fine planet of ours. I have found that consitently striving to be the best possible versions of myself at any given point in time, is where I find true happiness. You should also know that at any given point in time I always have my computer with me because im borderline obbsessed with all things tech. The possibilities are infinite in the time we are living. I enjoy thinking about, studying and creating new applications of and with various technologies. There is so much to learn in such little time. Be sure to soak up as much as you can.
+	  </p> 
+ 	 </div>
+    </section>
+	 
+	
+	 <div class="row">
+	  <div class="container-fluid">
+ 	   <div class="col-md-12" style="margin-top: 67px;">
+ 	    <h2>Tomorow</h2>
+ 	 	 <p style="text-align: justify;">In my previous life I traveled the United states helping small business owners in just about every major U.S. city, solve their customer acquisition challenges.  It was a great experience and the best education I could have asked for. My years of studying people, learning what they need and understanding their wants, has given me a strong sense of empathy to bring towards my development efforts. 
+	 	 </p>
+	   </div>	
+	  </div>
+	 </div>
+	 
+	  
+	<div class="row" >
+	 <div class="container-fluid">
+		 <p style="text-align: justify;">I love to help so please reach out to me and lets solve a problem together. Two heads are better than one, yours is better than mine, mines different than yours. Lets put them together and do something awesome!
+	     </p>
+	 </div>
+	</div>
+ 	 </section>
+ 	
+	 
+	 
+	 	    	  
+		    
+	 	  		 	
+	</div>
+
+	<!-- 	<section class="sidebar">
 			<div id="connect">
 				<h2>Connect with Me</h2>
 
@@ -48,13 +214,16 @@
 					<img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
 				</a>
 			</div>
-		</section>
+		</section> -->
 	</main>
-
-	<footer>
+ </div>
+<!-- ##### Footer ##### -->
+ <footer>
 		<div class="container">
 			&copy; Copyright 2016 Joseph Pulaski
 		</div>
 	</footer>
+
+
 </body>
 </html>
